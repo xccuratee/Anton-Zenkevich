@@ -2,8 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Document</title>
     <style>
     .header, .footer{
@@ -11,15 +10,12 @@
         background: #add8e6;
         font-size: 200%; color:blue ; font-weight: bold; 
         text-align: center;
-       
-    
-
     }
     .content{
         margin-left: 15%;
     }
     .menu{
-        width: 15%;
+        width: 100px;
         background: #f0e68c;
         float: left;
         font-size: 120%;font-weight: bold;
@@ -27,21 +23,16 @@
     }
     .clear {
         height: 0px;
-       clear: both; ;
-    }
-    .clearfix:after{
-        content: '';
-        display: block;
-        clear: both;
+clear: both; 
     }
 
-    @media all and (max-width:1606px){
-        .menu{
-            height: 350px;
-            background-color: rgb(242, 187, 187) }
-
-    }
-    </style>
+    
+    @media all and (max-width:900px){
+.menu{
+background-color: red;
+}
+}
+</style>
 </head>
 <body>
     <div class="header">ПРИВЕТ УЧАСТНИКАМ СОРЕВНОВАНИЙ!</div>
@@ -57,7 +48,7 @@
         <li><a href="https://www.google.com/" title="123">теннис</a></li>
         <li><a href="https://www.google.com/" title="123">гандбол</a></li>
         </ul></div>
-    <div class="content clearfix">
+    <div class="content">
         <img src="img/football1.png" style="float:left ;">
         Жил-был старик со старухою. Просит старик: «Испеки, старуха, колобок». — «Из чего печь-то? Муки нету». — «Э-эх, старуха! По коробу поскреби, по сусекам помети; авось муки и наберется».
 

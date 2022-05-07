@@ -5,23 +5,246 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+ 
+    height: 100vh;
+    background: #000000;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+.content{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    margin-left: 15%;
+    color: #03e9f4;
+    font-size: 40px;
+    text-shadow: #03e9f4 1px 0 3px;
+    
+    }
+.menu{
+    margin-left: 30px;
+        width: 50%;
+        background: #000000;
+        float: left;
+        font-weight: bold;
+
+    }
+a{
+    position: relative;
+    display: inline-block;
+    padding: 25px 30px;
+    margin: 30px 0;
+    color: #03e9f4;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    overflow: hidden;
+    margin-right: 50px;
+    
+   
+}
+a:hover{
+    background: #03e9f4;
+    color: #050801;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 5px #03e9f4,
+                0 0 2px #03e9f4;
+     -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
+}
+
+
+a span{
+    position: absolute;
+    display: block;
+}
+a span:nth-child(1){
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#03e9f4);
+    animation: animate1 1s linear infinite;
+}
+@keyframes animate1{
+    0%{
+        left: -100%;
+    }
+    50%,100%{
+        left: 100%;
+    }
+}
+a span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#03e9f4);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+@keyframes animate2{
+    0%{
+        top: -100%;
+    }
+    50%,100%{
+        top: 100%;
+    }
+}
+a span:nth-child(3){
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#03e9f4);
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.50s;
+}
+@keyframes animate3{
+    0%{
+        right: -100%;
+    }
+    50%,100%{
+        right: 100%;
+    }
+}
+a span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#03e9f4);
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+@keyframes animate4{
+    0%{
+        bottom: -100%;
+    }
+    50%,100%{
+        bottom: 100%;
+    }
+}
+
+    </style>
 </head>
 <body>
-    <a href='DIARY/DIARY.html'>diary</a><br>
-        <a href='VIZBOR/vechno_student.html'>student</a><br>
-            <a href='VIZBOR/vizbor.html'>vizbor</a><br>
-            <a href='CHILDBOOK/CHILDBOOK.html'>СHILDBOOK</a><br>
-            <a href='CHILDBOOK/dop2.1.html'>dop2.1</a><br>
-            <a href='CHILDBOOK/dop2.2.html'>dop2.2</a><br>
-            <a href='CHILDBOOK/skovorodka.html'>TEFAL</a><br>
-            <a href="FONT_GWF/3.1_3.2.html">dop 3.1,3.2</a><br>
-            <a href="FONT_GWF/FONT_GWF.html">FONT_GWF</a><br>
-            <a href="DIV_FRAME/area.html">AREA</a><br>
-            <a href="DIV_FRAME/DIV_FRAME.html">DIV_FRAME</a><br>
-            <a href="DIV_FRAME/4.1.html">4.1</a><br>
-            <a href="DIV_FRAME/4.3.html">4.3</a><br>
-            <a href="DIV_FRAME/chess.html">chess</a><br>
-            <a href="maket/MAKET_TABLE.html">Табличный макет</a>
+    <div class="menu">
+    <a href="DIARY/DIARY.html">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        diary   
+        <a href='VIZBOR/vechno_student.html'>
+            <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        student
+            <a href='VIZBOR/vizbor.html'>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>vizbor</a>
+            <a href='CHILDBOOK/CHILDBOOK.html'>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>СHILDBOOK</a>
+            <a href='CHILDBOOK/dop2.1.html'>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>dop2.1</a>
+            <a href='CHILDBOOK/dop2.2.html'>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>dop2.2</a>
+            <a href='CHILDBOOK/skovorodka.html'>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>TEFAL</a>
+            <a href="FONT_GWF/3.1_3.2.html">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>dop 3.1,3.2</a>
+            <a href="FONT_GWF/FONT_GWF.html">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>FONT_GWF</a>
+            <a href="DIV_FRAME/area.html">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>AREA</a>
+            <a href="DIV_FRAME/DIV_FRAME.html">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>DIV_FRAME</a>
+            <a href="DIV_FRAME/4.1.html">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>4.1</a>
+            <a href="DIV_FRAME/4.3.html">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>4.3</a>
+            <a href="DIV_FRAME/chess.html">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>chess</a>
+            <a href="maket/MAKET_TABLE.html">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>Табличный макет</a>
+                <a href="maket/1.html">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Блочный макет + адаптивный макет 2 д/з в одном
+                <a href="html6/css_chess.html">
+                    <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                css_chess
+                <a href="html6/extref.html">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                extref
+                <a href="html6/star1.html">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                star</a>
+                </div>
+                <div class="content">ANTON ZENKEVICH</div>
+                
+          
             
 </body>
 </html>

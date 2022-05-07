@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.rating {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 400px;
+  height: 20px;
+}
+ 
+.rating li {
+  display: block;
+  width: 74px;
+  height: 79px;
+  float: right; 
+  text-indent: -9999px; 
+  cursor: pointer;
+  background: url("img/star0.png");
+}
+.rating li:hover,
+.rating li:hover ~ li {
+    background: url("img/star1.png");
+  background-position: 74 79px;
+}
+</style>
+    
+</head>
+<body>
+    <ol class="rating">
+        <li>5</li>
+        <li>4</li>
+        <li>3</li>
+        <li>2</li>
+        <li>1</li>
+    </ol>
+   
+
+    
+</body>
+</html>
