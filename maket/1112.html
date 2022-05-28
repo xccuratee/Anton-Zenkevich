@@ -6,60 +6,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-          
-    .header, .footer{
-        height: 50px;
+
+body {
+  height: 50vh;
+  
+  display: grid;
+  grid-template-areas:
+    'header header'
+    'menu   content'
+    'footer footer';
+  grid-template-columns: 12rem 3fr;
+  grid-template-rows: 5rem fr 3rem;
+  
+
+}
+
+
+body > * {
+  padding: 0rem;
+  
+}
+
+header {
+  grid-area: header;
+  height: 50px;
         background: #add8e6;
         font-size: 200%; color:blue ; font-weight: bold; 
         text-align: center;
-    }
-  
-       
+          height: 20vh;
+}
 
-    
-    .content{
-        margin-left: 15%;
-        flex: 1;
-    }
-    .menu{
-        width: 15%;
-        background: #f0e68c;
-        float: left;
-        font-size: 120%;font-weight: bold;
+article {
+  grid-area: content;
+}
 
-    }
-    .clear {
-        height: 0px;
-       clear: both; ;
-    }
-    .clearfix:after{
-        content: '';
-        display: block;
-        clear: both;
-    }
+aside {
+  grid-area: menu;
+  background: #f0e68c;
+}
 
-    @media screen and (max-width: 575px) {
-  #main {
-    display: block;
+footer {
+  grid-area: footer;
+  height: 50px;
+        background: #add8e6;
+        font-size: 200%; color:blue ; font-weight: bold; 
+        text-align: center;
+          height: 20vh;
+}
+@media (max-width: 600px) {
+  body {
+    grid-template-areas:
+      'header'
+      'content'
+      'menu'
+      'footer';
+    grid-template-columns: 1fr;
+    grid-template-rows: rem auto 1fr 3rem;
   }
 }
     </style>
 </head>
 <body>
-    <div class="header">ПРИВЕТ УЧАСТНИКАМ СОРЕВНОВАНИЙ!</div>
-    <div class="menu">Виды спорта:
-        <ul>
-        <li><a href="https://www.google.com/" title="Ссылка 1">конькобежный спорт</a></li>
-        <li><a href="https://www.google.com/" title="Ссылка 2">биатлон</a></li>
-        <li><a href="https://www.google.com/" title="Ссылка 3">футбол</a></li>
-        <li><a href="https://www.google.com/" title="123">стрельба из лука</a></li>
-        <li><a href="https://www.google.com/" title="123">прыжки в длину</a></li>
-        <li><a href="https://www.google.com/" title="123">прыжки в высоту</a></li>
-        <li><a href="https://www.google.com/" title="123">хоккей</a></li>
-        <li><a href="https://www.google.com/" title="123">теннис</a></li>
-        <li><a href="https://www.google.com/" title="123">гандбол</a></li>
-        </ul></div>
-    <div class="content clearfix">
+    <header>ПРИВЕТ УЧАСТНИКАМ СОРЕВНОВАНИЙ!</header>
+    <article>
         <img src="img/football1.png" style="float:left ;">
         Жил-был старик со старухою. Просит старик: «Испеки, старуха, колобок». — «Из чего печь-то? Муки нету». — «Э-эх, старуха! По коробу поскреби, по сусекам помети; авось муки и наберется».
 
@@ -123,11 +132,19 @@
         От медведя ушёл,
         От тебя, лиса, и подавно уйду!
         
-        «Какая славная песенка! — сказала лиса. — Но ведь я, колобок, стара стала, плохо слышу; сядь-ка на мою мордочку да пропой еще разок погромче». Колобок вскочил лисе на мордочку и запел ту же песню. «Спасибо, колобок! Славная песенка, еще бы послушала! Сядь-ка на мой язычок да пропой в последний разок», — сказала лиса и высунула свой язык; колобок прыг ей на язык, а лиса — ам его! и скушала.</div>
-    <div class="clear"></div>
-        <div class="footer">ГЛАВНОЕ НЕ ПОБЕДА, А УЧАСТИЕ!</div>
-        <div style="padding: 20px; background-color: lightgreen; border: solid green 1px; position: absolute; right: 5mm; top: 5mm; width: 70px; text-align: center">
-            <a href="">ВСТУПИТЬ<br>В КЛУБ</a>
-          </div>
+        «Какая славная песенка! — сказала лиса. — Но ведь я, колобок, стара стала, плохо слышу; сядь-ка на мою мордочку да пропой еще разок погромче». Колобок вскочил лисе на мордочку и запел ту же песню. «Спасибо, колобок! Славная песенка, еще бы послушала! Сядь-ка на мой язычок да пропой в последний разок», — сказала лиса и высунула свой язык; колобок прыг ей на язык, а лиса — ам его! и скушала.</article>
+        <aside>Виды спорта:
+            <ul>
+            <li><a href="https://www.google.com/" title="Ссылка 1">конькобежный спорт</a></li>
+            <li><a href="https://www.google.com/" title="Ссылка 2">биатлон</a></li>
+            <li><a href="https://www.google.com/" title="Ссылка 3">футбол</a></li>
+            <li><a href="https://www.google.com/" title="123">стрельба из лука</a></li>
+            <li><a href="https://www.google.com/" title="123">прыжки в длину</a></li>
+            <li><a href="https://www.google.com/" title="123">прыжки в высоту</a></li>
+            <li><a href="https://www.google.com/" title="123">хоккей</a></li>
+            <li><a href="https://www.google.com/" title="123">теннис</a></li>
+            <li><a href="https://www.google.com/" title="123">гандбол</a></li>
+            </ul></aside>
+        <footer>ГЛАВНОЕ НЕ ПОБЕДА, А УЧАСТИЕ!</footer>
 </body>
 </html>
